@@ -1,0 +1,17 @@
+global:
+  scrape_interval: 5s  # Scrape targets every 5 seconds
+  evaluation_interval: 5s
+
+scrape_configs:
+  # Scrape .NET Core App
+  - job_name: 'Prometheus_Scraping'
+    static_configs:
+      - targets:
+          - 'host.docker.internal:9095'  # Internal Docker service
+
+  # Scrape Prometheus itself for its own metrics
+  - job_name: 'prometheus'
+    static_configs:
+      - targets:
+          - 'localhost:9090'
+

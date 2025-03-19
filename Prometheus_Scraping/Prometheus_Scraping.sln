@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometheus_Scraping", "Prometheus_Scraping.csproj", "{EC6DD7D6-D886-4EFD-9784-A06F84053D8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC6DD7D6-D886-4EFD-9784-A06F84053D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6DD7D6-D886-4EFD-9784-A06F84053D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6DD7D6-D886-4EFD-9784-A06F84053D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6DD7D6-D886-4EFD-9784-A06F84053D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5160D9FE-F5AB-4CE0-8294-B8E34F6B1779}
+	EndGlobalSection
+EndGlobal
