@@ -60,7 +60,7 @@ You should see:
     - Under the query option you can add **hello_requests_total** or **Weather_counter** and run the query.
     - Finally save the Dasboard.
 
-**Images**
+**Images:**
 
 ![Grafana-1](https://github.com/user-attachments/assets/48d1873b-a1bf-4340-bf59-7bee2ae53d06)
 ![Prometheus-1](https://github.com/user-attachments/assets/b7bbd8ae-255b-4793-b791-e23380b1dafb)
