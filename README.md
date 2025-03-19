@@ -28,7 +28,7 @@ cd Prometheus_Scraping
 docker build -t scraping .
 ```
 
-3. Move back to root folder and run Docker Compose
+4. Move back to root folder and run Docker Compose
 ```bash
 cd ..
 docker-compose up -d
@@ -39,16 +39,16 @@ You should see:
 - prometheus
 - grafana
 
-4. You should be able to access:
+5. You should be able to access:
    - Prometheus at http://localhost:9090
    - Grafana at http://localhost:3000
    - API at http://localhost:9095/Hello
    - To access Metrics: http://localhost:9095/metrics
 
-5. Login to Grafana
+6. Login to Grafana
    - Username: admin
    - Password: admin
-   You will have to create a new password and you will be able to successfully login.
+You will have to create a new password and you will be able to successfully login.
 
 6. 
    
