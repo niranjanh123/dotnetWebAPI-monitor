@@ -20,7 +20,8 @@ git clone https://github.com/niranjanh123/dotnetWebAPI-monitor.git
 ```
 
 2. Run the Project locally:
-      Open Visual Studio 2022 and build the Project. Once the build is successful, run the project and test out the API's. You should also be able to access http://localhost:5279/metrics to view the data scraped by Prometheus.
+
+   Open Visual Studio 2022 and build the Project. Once the build is successful, run the project and test out the API's. You should also be able to access http://localhost:5279/metrics to view the data scraped by Prometheus.
  
 
 4. Create the docker image using the Dockerfile
@@ -49,9 +50,9 @@ You should see:
 6. Login to Grafana
    - Username: admin
    - Password: admin
-You will have to create a new password and you will be able to successfully login.
+   - You will have to create a new password and be able to log in successfully.
 
-6. 
+7.
    
 
 
