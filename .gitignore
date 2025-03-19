@@ -10,8 +10,6 @@
 *.tmp
 
 # Ignore Docker-related files
-Dockerfile
-docker-compose.yml
 docker-compose.override.yml
 
 # Ignore config and local settings

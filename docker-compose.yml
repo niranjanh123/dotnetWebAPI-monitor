@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  # .NET Core Application
+  prometheus_scraping:
+    image: scraping:latest
+    container_name: prometheus_scraping
+    build:
+      context: ./Prometheus_Scraping
+      dockerfile: Dockerfile
+    ports:
+      - "5279:5279"
+      - "8081:8081"
+      - "9095:8080" 
+    networks:
+      - monitoring
+
+  # Prometheus service
+  prometheus:
+    image: prom/prometheus:v2.45.0
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - monitoring
+
+  # Grafana service
+  grafana:
+    image: grafana/grafana:10.2.0
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - monitoring
+    depends_on:
+      - prometheus
+    volumes:
+      - grafana-data:/var/lib/grafana
+
+networks:
+  monitoring:
+    driver: bridge
+
+volumes:
+  grafana-data:
